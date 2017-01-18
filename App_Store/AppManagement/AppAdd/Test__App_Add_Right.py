@@ -24,7 +24,7 @@ class TestAppManagement(unittest.TestCase):
         sreach_window=self.driver.current_window_handle    
         self.driver.find_element_by_link_text("添加应用").click()
         sleep(1)
-        #self. write_file_name_to_txt()
+        self. write_file_name_to_txt()
     def write_file_name_to_txt(self):
         #packagepath = 'D:\\workspace\\Test1\\test\\test.py\\Package'
         #allfilename = 'D:\\workspace\\Test1\\test\\test.py\\Package\\all.txt'
