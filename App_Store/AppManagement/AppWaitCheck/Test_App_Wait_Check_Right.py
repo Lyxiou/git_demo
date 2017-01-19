@@ -56,6 +56,7 @@ class TestAppManagement(unittest.TestCase):
     def test_drop_down_list_num_10(self):
         result = self.check_drop_down_list_num_10()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
         
     def check_drop_down_list_num_25(self):
         sreach_window = self.driver.current_window_handle
@@ -80,6 +81,7 @@ class TestAppManagement(unittest.TestCase):
     def test_drop_down_list_num_25(self):
         result = self.check_drop_down_list_num_25()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
         
     def check_drop_down_list_num_50(self):
         sreach_window = self.driver.current_window_handle
@@ -104,6 +106,7 @@ class TestAppManagement(unittest.TestCase):
     def test_drop_down_list_num_50(self):
         result = self.check_drop_down_list_num_50()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
         
     def check_drop_down_list_num_all(self):
         sreach_window = self.driver.current_window_handle
@@ -128,6 +131,7 @@ class TestAppManagement(unittest.TestCase):
     def test_drop_down_list_num_all(self):
         result = self.check_drop_down_list_num_all()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
         
                 
     def check_add_app_page(self):
@@ -173,6 +177,7 @@ class TestAppManagement(unittest.TestCase):
     def test_check_add_app_page(self):
         result = self.check_add_app_page()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
     
     def check_add_app_suggestion_title(self):
         sreach_window = self.driver.current_window_handle
@@ -192,6 +197,7 @@ class TestAppManagement(unittest.TestCase):
     def test_add_app_suggestion(self):
         result = self.check_add_app_suggestion_title()
         self.assertTrue(result)
+        os.system("taskkill /F /IM firefox.exe")
        
     def check_add_app_suggestion_submit(self):
         sreach_window = self.driver.current_window_handle
@@ -235,7 +241,7 @@ class TestAppManagement(unittest.TestCase):
     def test_add_app_suggestion_submit(self):
        result = self.check_add_app_suggestion_submit() 
        self.assertTrue(result)
-        
+       os.system("taskkill /F /IM firefox.exe")
     
     
 if __name__ == '__main__':

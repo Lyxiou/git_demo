@@ -1,0 +1,13 @@
+1484706255153	geckodriver	INFO	Listening on 127.0.0.1:63844
+1484706257203	mozprofile::profile	INFO	Using profile path C:\Users\YAXUEL~1.O\AppData\Local\Temp\rust_mozprofile.zU2IGdYa0Jdb
+1484706257208	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1484706257226	geckodriver::marionette	INFO	Connecting to Marionette on localhost:63859
+1484706258068	Marionette	INFO	Listening on port 63859
+[Child 17596] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17596] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2E0045,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+

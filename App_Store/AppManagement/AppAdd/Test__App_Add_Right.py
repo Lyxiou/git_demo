@@ -5,10 +5,10 @@ import unittest
 from time import sleep
 import os
 
-class TestAppManagement(unittest.TestCase):
+class TestAppManagementLogin(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
-        self.base_url = "http://10.110.1.55:8082/admin/home.html"
+        self.base_url = 'http://10.110.1.55:8082/admin/home.html'
         #http://10.110.1.55:8082/login.html
         self.driver.get(self.base_url)
         self.driver.find_element_by_id("username").send_keys("admin")
@@ -395,6 +395,7 @@ class TestAppManagement(unittest.TestCase):
     def test_save_submit_right(self):
         result = self.check_save_submit_right()
         self.assertFalse(result)
+        os.system("taskkill /F /IM firefox.exe")
     '''  
     #//*[@id="appName-error"]
     def check_save_submit_not_select_category(self): 

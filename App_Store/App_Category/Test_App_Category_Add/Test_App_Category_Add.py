@@ -109,7 +109,8 @@ class TestAppCategory(unittest.TestCase):
         list_item_total_after = self.check_list_item_total()   
         list_item_sub = list_item_total_after -  list_item_total_before
         self.assertTrue(self.check_save(list_item_sub))
-        sleep(1)        
+        sleep(1)  
+        os.system("taskkill /F /IM firefox.exe")      
     '''
     def test_select_parent_category_False(self):        
         self.assertTrue(self.check_select_parent_category())
