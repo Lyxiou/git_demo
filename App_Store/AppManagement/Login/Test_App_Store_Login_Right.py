@@ -35,12 +35,12 @@ class TestLogin(unittest.TestCase):
     def test_Login_success_with_right_u_p(self):
         result = self.login_check("admin", "123456")
         self.assertTrue(result)
-        os.system("taskkill /F /IM firefox.exe")
+        
            
     def test_login_fail_with_wrong_u_p(self):
         result = self.login_check("admin", "password")
         self.assertFalse(result) 
-        os.system("taskkill /F /IM firefox.exe")     
+             
 
 if __name__ == '__main__':
     unittest.main()

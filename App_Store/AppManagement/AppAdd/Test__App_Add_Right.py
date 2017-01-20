@@ -395,7 +395,7 @@ class TestAppManagementLogin(unittest.TestCase):
     def test_save_submit_right(self):
         result = self.check_save_submit_right()
         self.assertFalse(result)
-        os.system("taskkill /F /IM firefox.exe")
+        
     '''  
     #//*[@id="appName-error"]
     def check_save_submit_not_select_category(self): 

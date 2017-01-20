@@ -61,7 +61,7 @@ class TestAppCategoryAddPage(unittest.TestCase):
         self.assertTrue(self.check_is_category_frame_exist('//*[@id="dndArea"]'))
         self.assertTrue(self.check_is_category_frame_exist('//*[@id="catForm"]/div[4]/div/div[2]'))
         self.assertTrue(self.check_is_category_frame_exist('//*[@id="catForm"]/div[5]/div'))
-        os.system("taskkill /F /IM firefox.exe")
+        
         
         
         
